@@ -6,14 +6,13 @@ import retrofit2.http.GET
 import retrofit2.http.Query;
 
 interface WeatherApi {
-
-    @GET("v1/forecast?hourly=weathercode,temperature_2m,windspeed_10m,pressure_msl,relativehumidity_2m&latitude=52.52&longitude=13.41")
+    @GET("v1/forecast?hourly=weathercode,temperature_2m,windspeed_10m,pressure_msl,relativehumidity_2m")
     suspend fun getHourlyWeather(
         @Query("latitude") lat: Double,
         @Query("longitude") long: Double
     ): WeatherHourlyDto
 
-    @GET("v1/forecast?daily=weathercode,temperature_2m_max,temperature_2m_min&latitude=52.52&longitude=13.41&timezone=Asia%2FBangkok")
+    @GET("v1/forecast?daily=weathercode,temperature_2m_max,temperature_2m_min")
     suspend fun getDailyWeather(
         @Query("latitude") lat: Double,
         @Query("longitude") long: Double,
