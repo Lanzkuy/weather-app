@@ -1,11 +1,10 @@
 package com.lacorp.weather_app.presentation.ui.theme
 
-import androidx.compose.foundation.isSystemInDarkTheme
-import androidx.compose.material.Colors
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.darkColors
 import androidx.compose.material.lightColors
 import androidx.compose.runtime.Composable
+import com.lacorp.weather_app.util.WeatherEnum
 
 private val DarkColorPalette = darkColors(
     primary = Purple200,
@@ -44,11 +43,12 @@ private val StormyColorPallete = lightColors(
 )
 
 @Composable
-fun WeatherAppTheme(darkTheme: Boolean = isSystemInDarkTheme(), content: @Composable () -> Unit) {
-    val colors = if (darkTheme) {
-        DarkColorPalette
-    } else {
-        LightColorPalette
+fun WeatherAppTheme(mode: WeatherEnum, content: @Composable () -> Unit) {
+    val colors = when (mode) {
+        WeatherEnum.CLOUDY -> CloudyColorPallete
+        WeatherEnum.RAINY -> RainyColorPallete
+        WeatherEnum.SUNNY -> SunnyColorPallete
+        WeatherEnum.STORMY -> StormyColorPallete
     }
 
     MaterialTheme(
