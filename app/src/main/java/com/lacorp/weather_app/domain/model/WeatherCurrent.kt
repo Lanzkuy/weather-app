@@ -1,6 +1,6 @@
 package com.lacorp.weather_app.domain.model
 
-import com.lacorp.weather_app.domain.util.WeatherType
+import com.lacorp.weather_app.util.WeatherType
 
 data class WeatherCurrent(
     val temperature: Double,

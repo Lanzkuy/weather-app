@@ -6,7 +6,7 @@ import com.lacorp.weather_app.domain.model.Weather
 import com.lacorp.weather_app.domain.model.WeatherCurrent
 import com.lacorp.weather_app.domain.model.WeatherDaily
 import com.lacorp.weather_app.domain.model.WeatherHourly
-import com.lacorp.weather_app.domain.util.WeatherType
+import com.lacorp.weather_app.util.WeatherType
 import java.time.LocalDate
 import java.time.LocalDateTime
 import java.time.format.DateTimeFormatter

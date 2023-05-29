@@ -1,4 +1,4 @@
-package com.lacorp.weather_app.domain.util
+package com.lacorp.weather_app.util
 
 import androidx.annotation.DrawableRes
 import com.lacorp.weather_app.R
@@ -9,22 +9,22 @@ sealed class WeatherType(
 ) {
     object Sunny : WeatherType(
         "Sunny",
-        R.drawable.sunny
+        R.drawable.weather_sunny
     )
 
     object Cloudy : WeatherType(
         "Cloudy",
-        R.drawable.cloudy
+        R.drawable.weather_cloudy
     )
 
     object Rainy : WeatherType(
         "Rainy",
-        R.drawable.rainy
+        R.drawable.weather_rainy
     )
 
     object Stormy : WeatherType(
         "Stormy",
-        R.drawable.storm
+        R.drawable.weather_stormy
     )
 
     companion object {

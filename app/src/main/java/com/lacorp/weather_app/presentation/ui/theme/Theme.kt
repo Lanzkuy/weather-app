@@ -18,37 +18,41 @@ private val LightColorPalette = lightColors(
     secondary = Teal200
 )
 
-private val CloudyColorPallete = lightColors(
+private val CloudyColorPalette = lightColors(
     primary = Cloudy50,
     primaryVariant = Cloudy70,
     secondary = Cloudy30,
+    secondaryVariant = Cloudy90
 )
 
-private val SunnyColorPallete = lightColors(
+private val SunnyColorPalette = lightColors(
     primary = Sunny50,
     primaryVariant = Sunny70,
     secondary = Sunny30,
+    secondaryVariant = Sunny90
 )
 
-private val RainyColorPallete = lightColors(
+private val RainyColorPalette = lightColors(
     primary = Rainy50,
     primaryVariant = Rainy70,
     secondary = Rainy30,
+    secondaryVariant = Rainy90
 )
 
-private val StormyColorPallete = lightColors(
+private val StormyColorPalette = lightColors(
     primary = Stormy50,
     primaryVariant = Stormy70,
     secondary = Stormy30,
+    secondaryVariant = Stormy90
 )
 
 @Composable
 fun WeatherAppTheme(mode: WeatherEnum, content: @Composable () -> Unit) {
     val colors = when (mode) {
-        WeatherEnum.CLOUDY -> CloudyColorPallete
-        WeatherEnum.RAINY -> RainyColorPallete
-        WeatherEnum.SUNNY -> SunnyColorPallete
-        WeatherEnum.STORMY -> StormyColorPallete
+        WeatherEnum.CLOUDY -> CloudyColorPalette
+        WeatherEnum.RAINY -> RainyColorPalette
+        WeatherEnum.SUNNY -> SunnyColorPalette
+        WeatherEnum.STORMY -> StormyColorPalette
     }
 
     MaterialTheme(
