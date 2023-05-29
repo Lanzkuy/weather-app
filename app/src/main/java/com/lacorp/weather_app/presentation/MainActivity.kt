@@ -20,8 +20,8 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.lacorp.weather_app.R
-import com.lacorp.weather_app.presentation.ui.theme.CulturedWhite
-import com.lacorp.weather_app.presentation.ui.theme.WeatherAppTheme
+import com.lacorp.weather_app.presentation.theme.CulturedWhite
+import com.lacorp.weather_app.presentation.theme.WeatherAppTheme
 import com.lacorp.weather_app.util.WeatherEnum
 import dagger.hilt.android.AndroidEntryPoint
 

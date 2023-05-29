@@ -1,4 +1,4 @@
-package com.lacorp.weather_app.presentation.ui.theme
+package com.lacorp.weather_app.presentation.theme
 
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.Shapes
