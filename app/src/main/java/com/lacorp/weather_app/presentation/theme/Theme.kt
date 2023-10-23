@@ -1,49 +1,41 @@
 package com.lacorp.weather_app.presentation.theme
 
+import android.app.Activity
 import androidx.compose.material.MaterialTheme
-import androidx.compose.material.darkColors
 import androidx.compose.material.lightColors
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.SideEffect
+import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.toArgb
+import androidx.compose.ui.platform.LocalView
 import com.lacorp.weather_app.util.WeatherEnum
-
-private val DarkColorPalette = darkColors(
-    primary = Purple200,
-    primaryVariant = Purple700,
-    secondary = Teal200
-)
-
-private val LightColorPalette = lightColors(
-    primary = Purple500,
-    primaryVariant = Purple700,
-    secondary = Teal200
-)
 
 private val CloudyColorPalette = lightColors(
     primary = Cloudy50,
     primaryVariant = Cloudy70,
-    secondary = Cloudy30,
-    secondaryVariant = Cloudy90
+    secondary = Cloudy10,
+    secondaryVariant = Cloudy30
 )
 
 private val SunnyColorPalette = lightColors(
     primary = Sunny50,
     primaryVariant = Sunny70,
-    secondary = Sunny30,
-    secondaryVariant = Sunny90
+    secondary = Sunny10,
+    secondaryVariant = Sunny30
 )
 
 private val RainyColorPalette = lightColors(
     primary = Rainy50,
     primaryVariant = Rainy70,
-    secondary = Rainy30,
-    secondaryVariant = Rainy90
+    secondary = Rainy10,
+    secondaryVariant = Rainy30
 )
 
 private val StormyColorPalette = lightColors(
     primary = Stormy50,
     primaryVariant = Stormy70,
-    secondary = Stormy30,
-    secondaryVariant = Stormy90
+    secondary = Stormy10,
+    secondaryVariant = Stormy30
 )
 
 @Composable

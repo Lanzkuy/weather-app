@@ -18,6 +18,18 @@ val fonts = FontFamily(
 )
 
 val Typography = Typography(
+    h2 = TextStyle(
+        fontFamily = fonts,
+        fontWeight = FontWeight.Normal,
+        fontSize = 60.sp,
+        letterSpacing = (-0.5).sp
+    ),
+    h5 = TextStyle(
+        fontFamily = fonts,
+        fontWeight = FontWeight.Normal,
+        fontSize = 28.sp
+
+    ),
     body1 = TextStyle(
         fontFamily = fonts,
         fontWeight = FontWeight.Normal,
@@ -27,11 +39,5 @@ val Typography = Typography(
         fontFamily = fonts,
         fontWeight = FontWeight.Normal,
         fontSize = 14.sp
-    ),
-    h5 = TextStyle(
-        fontFamily = fonts,
-        fontWeight = FontWeight.Normal,
-        fontSize = 28.sp
-
     )
 )
