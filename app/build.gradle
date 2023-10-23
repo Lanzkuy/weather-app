@@ -7,12 +7,12 @@ plugins {
 
 android {
     namespace 'com.lacorp.weather_app'
-    compileSdk 32
+    compileSdk 34
 
     defaultConfig {
         applicationId "com.lacorp.weather_app"
         minSdk 26
-        targetSdk 32
+        targetSdk 33
         versionCode 1
         versionName "1.0"
 
@@ -29,17 +29,17 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_8
-        targetCompatibility JavaVersion.VERSION_1_8
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
     }
     kotlinOptions {
-        jvmTarget = '1.8'
+        jvmTarget = '17'
     }
     buildFeatures {
         compose true
     }
     composeOptions {
-        kotlinCompilerExtensionVersion '1.1.1'
+        kotlinCompilerExtensionVersion '1.4.0'
     }
     packagingOptions {
         resources {
@@ -50,12 +50,12 @@ android {
 
 dependencies {
     //General
-    implementation 'androidx.core:core-ktx:1.7.0'
-    implementation 'androidx.lifecycle:lifecycle-runtime-ktx:2.3.1'
-    implementation 'androidx.activity:activity-compose:1.3.1'
+    implementation 'androidx.core:core-ktx:1.12.0'
+    implementation 'androidx.lifecycle:lifecycle-runtime-ktx:2.6.2'
+    implementation 'androidx.activity:activity-compose:1.8.0'
     implementation "androidx.compose.ui:ui:$compose_ui_version"
     implementation "androidx.compose.ui:ui-tooling-preview:$compose_ui_version"
-    implementation 'androidx.compose.material:material:1.1.1'
+    implementation 'androidx.compose.material:material:1.5.4'
 
     //Retrofit
     implementation 'com.squareup.retrofit2:retrofit:2.9.0'
@@ -63,18 +63,18 @@ dependencies {
     implementation 'com.squareup.okhttp3:logging-interceptor:5.0.0-alpha.3'
 
     //Dagger-Hilt
-    implementation "com.google.dagger:hilt-android:2.42"
-    kapt "com.google.dagger:hilt-android-compiler:2.42"
-    implementation "androidx.hilt:hilt-navigation-compose:1.0.0-alpha01"
-    implementation "com.google.dagger:dagger:1.0.0-alpha01"
-    kapt "com.google.dagger:dagger-compiler:1.0.0-alpha01"
+    implementation "com.google.dagger:hilt-android:2.44"
+    kapt "com.google.dagger:hilt-android-compiler:2.44"
+    implementation "androidx.hilt:hilt-navigation-compose:1.1.0-rc01"
+    implementation "com.google.dagger:dagger:2.44"
+    kapt "com.google.dagger:dagger-compiler:2.44"
     implementation 'androidx.hilt:hilt-navigation-compose:1.0.0'
 
     //Location Services
     implementation 'com.google.android.gms:play-services-location:21.0.1'
 
     //ViewModel Lifecycle
-    implementation 'androidx.lifecycle:lifecycle-viewmodel-compose:2.5.1'
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-compose:2.6.2'
 
     //Test
     testImplementation 'junit:junit:4.13.2'
