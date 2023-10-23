@@ -4,8 +4,8 @@ import com.lacorp.weather_app.util.WeatherType
 import java.time.LocalDate
 
 data class WeatherDaily(
-    val time: LocalDate,
-    val weatherType: WeatherType,
-    val maxTemperatures: Double,
-    val minTemperatures: Double
+    val time: LocalDate = LocalDate.now(),
+    val weatherType: WeatherType = WeatherType.Cloudy,
+    val maxTemperatures: Double = 0.0,
+    val minTemperatures: Double = 0.0
 )
