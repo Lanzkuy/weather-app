@@ -1,12 +1,12 @@
 package com.lacorp.weather_app.data.repository
 
+import com.lacorp.weather_app.common.Resource
+import com.lacorp.weather_app.data.mapper.toWeatherDaily
+import com.lacorp.weather_app.data.mapper.toWeatherHourly
 import com.lacorp.weather_app.data.source.remote.api.WeatherApi
 import com.lacorp.weather_app.domain.model.WeatherDaily
 import com.lacorp.weather_app.domain.model.WeatherHourly
 import com.lacorp.weather_app.domain.repository.IWeatherRepository
-import com.lacorp.weather_app.common.Resource
-import com.lacorp.weather_app.data.mapper.toWeatherDaily
-import com.lacorp.weather_app.data.mapper.toWeatherHourly
 import javax.inject.Inject
 
 class WeatherRepository @Inject constructor(

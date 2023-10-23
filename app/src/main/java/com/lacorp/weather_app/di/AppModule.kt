@@ -3,10 +3,10 @@ package com.lacorp.weather_app.di
 import android.content.Context
 import com.google.android.gms.location.FusedLocationProviderClient
 import com.google.android.gms.location.LocationServices
-import com.lacorp.weather_app.util.Constants.BASE_URL
 import com.lacorp.weather_app.data.location.LocationClient
 import com.lacorp.weather_app.data.source.remote.api.WeatherApi
 import com.lacorp.weather_app.domain.location.ILocationClient
+import com.lacorp.weather_app.util.Constants.BASE_URL
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn

@@ -1,3 +1,18 @@
 <resources>
     <string name="app_name">Weather App</string>
+
+    <string name="default_location">New York</string>
+    <string name="default_current_datetime">Friday, Jan 24, 10:30 AM</string>
+    <string name="default_current_weather">Cloudy</string>
+    <string name="default_current_temperature">32</string>
+    <string name="default_current_lowest_temperature">30</string>
+    <string name="default_current_highest_temperature">35</string>
+    <string name="default_time">10:30</string>
+    <string name="day_sunday">Sunday</string>
+    <string name="day_monday">Monday</string>
+    <string name="day_tuesday">Tuesday</string>
+    <string name="day_wednesdayy">Wednesday</string>
+    <string name="day_thursday">Thursday</string>
+    <string name="day_friday">Friday</string>
+    <string name="day_saturday">Saturday</string>
 </resources>

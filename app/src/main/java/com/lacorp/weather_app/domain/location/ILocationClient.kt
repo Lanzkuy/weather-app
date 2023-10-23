@@ -4,5 +4,5 @@ import android.location.Location
 
 interface ILocationClient {
     suspend fun getCurrentLocation(): Location?
-    class LocationException(message: String) : Exception()
+    class LocationException(message: String) : Exception(message)
 }

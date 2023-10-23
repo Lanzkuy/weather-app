@@ -70,12 +70,12 @@ fun Weather.toWeatherData(): Weather {
     var currentWeather: WeatherCurrent? = null
     val now = LocalDateTime.now()
 
-    val currentHourlyWeatherData = hourlyWeatherList[0]?.find {
+    val currentHourlyWeatherData = hourlyWeatherList?.get(0)?.find {
         val hour = if (now.minute < 30) now.hour else now.hour + 1
         it.time.hour == hour
     }
 
-    val currentDailyWeatherData = dailyWeatherList[0]?.find {
+    val currentDailyWeatherData = dailyWeatherList?.get(0)?.find {
         it.time.dayOfMonth == now.dayOfMonth
     }
 
